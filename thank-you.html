@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light background for a soft feeling */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .thank-you-container {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 50px 40px;
+            text-align: center;
+            width: 100%;
+            max-width: 700px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #0078d4; /* PROSKILL ENGINEERING Blue */
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+        }
+
+        .button {
+            background-color: #0078d4; /* PROSKILL ENGINEERING Blue */
+            color: white;
+            font-size: 18px;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .button:hover {
+            background-color: #005a8d;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #0078d4;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 30px auto;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #999;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #0078d4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            window.location.replace("http://127.0.0.1:5500"); // Replace with your homepage URL
+        }, 6000); // Redirect after 6 seconds for smooth user experience
+    </script>
+</head>
+<body>
+    <div class="thank-you-container">
+        <!-- <img src="path-to-your-logo.png" alt="PROSKILL ENGINEERING" class="logo"> Company Logo -->
+        <h1>Thank You for Reaching Out!</h1>
+        <p>We truly appreciate your inquiry, and our team will be in touch shortly with the best solutions for you.</p>
+        <div class="loader"></div>
+        <p>You will be redirected to the homepage shortly.</p>
+        <a href="http://127.0.0.1:5500" class="button">Go to Homepage</a> <!-- Manual redirect button -->
+        <div class="footer">
+            <p>For urgent queries, feel free to <a href="mailto:support@proskillengineering.com">Contact Support</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

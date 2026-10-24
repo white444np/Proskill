@@ -1,0 +1,6 @@
+client_secret_*.json
+.env
+.env.*
+*.icloud
+.DS_Store
+node_modules/
